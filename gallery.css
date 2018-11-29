@@ -1,0 +1,119 @@
+header {
+  font-family: 'Kumar One Outline', cursive;
+  display: flex;
+  background-color: #505160;
+}
+
+.logo {
+  width: 30%;
+  text-align: center;
+}
+
+.logo-image {
+  width: 90%;
+}
+
+.name {
+  width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: cornsilk;
+}
+
+.name h1, .mission {
+  position: relative;
+  top: 18%;
+}
+
+nav {
+  background-color: #598234;
+  padding: 5px;
+  border-bottom: 10px solid black;
+
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+nav ul {
+  margin-left: 4px;
+  padding-inline-start: 0px;
+}
+
+.navbar-default li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default li a:hover, {
+  color: green;
+}
+
+
+input[type="button"] {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 20px;
+}
+
+@media screen and (max-width: 365px) {
+  .name h1 {
+      font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 471px) {
+  .name h1 {
+      font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #gallery{
+      display: block;
+  }
+
+  .gallery-sub-div {
+      display: block;
+      /* width: 100vw; */
+  }
+
+  .gallery-sub-div div {
+      width: 100%;
+  }
+
+  .name h1 {
+      font-size: 1em;
+  }
+
+  nav li {
+      list-style: none;
+      display: inline;
+      padding: 0.1em;
+  }
+}
+
+/* @media screen and (min-width: 800px) {
+  main {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+} */
+
+@media screen and (max-width: 1150px) {
+  .mission {
+      margin-top: -1em;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  color: green;
+  text-align: center;
+}
