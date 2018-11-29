@@ -4,17 +4,16 @@
 
 body {
 	margin: 0px;
-    font-family: "Raleway", Sans-serif;
-    background-color: #C4DFE6;
     line-height: 1.6;
     width: 100vw;
+    background-color: #AEBD38
 }
 
 /* Header */
 header {
-    /* font-size: 30px; */
+    font-family: 'Kumar One Outline', cursive;
     display: flex;
-    background-color: #80BD9E;
+    background-color: #505160;
 }
 
 .logo {
@@ -30,7 +29,7 @@ header {
     width: 70%;
     text-align: center;
     font-size: 1.5rem;
-    color: #FF420E;
+    color: cornsilk;
 }
 
 .name h1, .mission {
@@ -40,9 +39,11 @@ header {
 
 /* nav */
 nav {
-    background-color: #89Da59;
+    background-color: #598234;
     padding: 5px;
     /* display: flex; */
+    border-bottom: 10px solid black;
+
 }
 
 nav li {
@@ -72,6 +73,12 @@ a, a:hover, a:focus, a:active, a.active {
     outline: 0;
 }
 /* gallery */
+
+main {
+    background-color: #68829E;
+    font-family: 'Cinzel', serif;
+    color: white;
+}
 
 #gallery{
     display: flex;
@@ -142,15 +149,15 @@ h2 {
 
 .team-text {
     /* background-color: #34675C; */
-    background-color: #1995ad;
-    /* border-radius: 20px; */
+    /* background-color: #1995ad; */
+    border-radius: 20px;
 
 }
 
 .staff-image img {
     width: 80%;
     border-radius: 20px;
-    box-shadow: 1px 3px 35px lightgrey;
+    box-shadow: 10px 5px 30px grey;
 }
 
 #team .section-title {
@@ -195,7 +202,6 @@ h2 {
 
     .gallery-sub-div div {
         width: 100%;
-        background-color: green;
     }
 
     .name h1 {
@@ -225,6 +231,12 @@ h2 {
     main {
         width: 1150px;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .mission {
+        margin-top: -1em;
     }
 }
 
