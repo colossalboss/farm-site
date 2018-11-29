@@ -1,0 +1,219 @@
+body {
+  background-color: grey;
+}
+
+header {
+  font-family: 'Kumar One Outline', cursive;
+  display: flex;
+  background-color: #505160;
+}
+
+.logo {
+  width: 30%;
+  text-align: center;
+}
+
+.logo-image {
+  width: 90%;
+}
+
+.name {
+  width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: cornsilk;
+}
+
+.name h1, .mission {
+  position: relative;
+  top: 18%;
+}
+
+nav {
+  background-color: #598234;
+  padding: 5px;
+  /* display: flex; */
+  border-bottom: 10px solid black;
+
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+}
+
+ul {
+  margin-left: 4px;
+  padding-inline-start: 0px;
+}
+
+.navbar-default li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-default li a:hover, {
+  color: green;
+}
+
+main {
+  background-color: #fff;
+  padding: 0.2em;
+}
+
+.page-title h2 {
+  padding-left: 0.8em;
+}
+
+/* form */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.large-text-area {
+  width: 90%;
+  margin: 2% auto;
+}
+
+#text-area {
+  width: 100%;
+  height: 300px;
+}
+
+.btn {
+  width: 20%;
+  margin: 0 auto;
+}
+
+input[type="submit"] {
+  background-color: #3f681c;
+  width: 100%;
+  padding: 0.8em;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid grey;
+  cursor: pointer;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover {
+  border: 1px solid black;
+}
+
+form {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 599px) {
+  .form-container {
+    display: block;
+  }
+
+  .input-div {
+    width: 90%;
+    padding: 10px;
+    /* margin: 0.2em; */
+  }
+
+  .input-div input {
+    width: 90%;
+    padding: 10px;
+    margin: 0.2em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .div1,
+  .div2 {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .div3,
+  .div4 {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  input {
+    width: 90%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .name h1 {
+      font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 471px) {
+  .name h1 {
+      font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #gallery{
+      display: block;
+  }
+
+  .gallery-sub-div {
+      display: block;
+      /* width: 100vw; */
+  }
+
+  .gallery-sub-div div {
+      width: 100%;
+  }
+
+  .name h1 {
+      font-size: 1em;
+  }
+
+  nav li {
+      list-style: none;
+      display: inline;
+      padding: 0.1em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mission {
+      margin-top: -1em;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  color: green;
+  text-align: center;
+}
