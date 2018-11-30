@@ -80,6 +80,10 @@ main {
     color: white;
 }
 
+.more {
+    margin: auto;
+}
+
 #gallery{
     display: flex;
     flex-wrap: wrap;
