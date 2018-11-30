@@ -1,27 +1,46 @@
+// Shuffle function from http://stackoverflow.com/a/2450976
+function shuffle(array) {
+  let copy = array;
+  let currentIndex = copy.length, temporaryValue,
+    randomIndex;
+
+  while (currentIndex !== 0) {
+	randomIndex = Math.floor(Math.random() * currentIndex);
+	currentIndex -= 1;
+	temporaryValue = copy[currentIndex];
+	copy[currentIndex] = copy[randomIndex];
+	copy[randomIndex] = temporaryValue;
+  }
+
+  return copy;
+}
+
 let model = {
   // category: null,
 
-  clarias: ['fish_1.jpg', 'fish_2.jpg', 'fish_3.jpg', 'fish_4.jpg', 'fish_5.jpg', 'fish_6.jpg'],
+  clarias: ['images/the-images/fish_1.jpeg', 'images/the-images/fish_2.jpeg', 'images/the-images/fish_3.jpeg', 'images/the-images/fish_4.jpeg', 'images/the-images/fish_5.jpeg', 'images/the-images/fish_6.jpeg', 'images/the-images/fish_7.jpeg', 'images/the-images/fish_8.jpeg', 'images/the-images/fish_9.jpeg', 'images/the-images/fish_10.jpeg', 'images/the-images/fish_11.jpeg', 'images/the-images/fish_12.jpeg', 'images/the-images/fish_13.jpeg', 'images/the-images/fish_14.jpeg', 'images/the-images/fish_15.jpeg'],
 
-  hybrid: ['fish-1.jpg', 'fish-2.jpg', 'fish-3.jpg', 'fish-4.jpg', 'fish-5.jpg', 'fish-6.jpg'],
+  hybrid: function() {
+    return shuffle(this.clarias);
+  },
 
-  hetero: ['fish1.jpg', 'fish2.jpg', 'fish3.jpg', 'fish4.jpg', 'fish5.jpg', 'fish6.jpg'],
+  hetero: ['images/the-images/fish1.jpeg', 'images/the-images/fish2.jpeg', 'images/the-images/fish3.jpeg', 'images/the-images/fish4.jpeg', 'images/the-images/fish5.jpeg', 'images/the-images/fish6.jpeg'],
 
   getCategory: function() {
-    let select = document.getElementById('button').textContent;
-    let text = select.toLowerCase();
-    if (text === 'clarias') {
+    if (octopus.type === 'clarias') {
       return this.clarias;
-    } else if (text === 'hybrid') {
-      return this.hybrid;
-    } else if (text === 'heterobronchus') {
+    } else if (octopus.type === 'hybrid') {
+      return this.hybrid();
+    } else if (octopus.type === 'heterobronchus') {
       return this.hetero;
     }
+  console.log(octopus.type)
   }
 };
 
 let octopus = {
-  init: function() {
+  init: function(text) {
+    this.type = text;
     view.render();
   },
 
@@ -32,6 +51,9 @@ let octopus = {
 
 let view = {
   render: function() {
+    'use strict'
+    let name = document.getElementById('name');
+    let nameDiv = document.querySelector('.name-space');
     let fishes = octopus.getCategory();
     this.displayArea = document.getElementById('display-div');
 
@@ -41,16 +63,21 @@ let view = {
       let fish = fishes[i];
 
       let fishDiv = document.createElement('div');
+      let round = document.createElement('p');
       let image = document.createElement('img');
       image.setAttribute('src', fish);
-      fishDiv.append(image);
+      round.append(image);
+      fishDiv.append(round);
 
       this.displayArea.append(fishDiv);
     };
+    name.innerHTML = octopus.type;
+    nameDiv.setAttribute('id', 'name-div');
 
   }
 };
 
 document.getElementById('choose').addEventListener('click', function(e) {
-  octopus.init();
+  let select = e.target.innerHTML.toLowerCase();
+  octopus.init(select);
 })
