@@ -8,68 +8,65 @@
   <link rel="stylesheet" href="gallery.css">
   <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline" rel="stylesheet">
 </head>
-<body>
+  <body>
     <header>
-        <div class="logo header-box">
-          <p><img src="images/logo.jpeg" alt="" class="logo-image"></p>
-        </div>
-        <div class="name header-box">
-          <h1>THE ULTIMATE FARM.</h1>
-          <p class="mission">Feed the World</p>
-        </div>
-        </header>
+      <div class="logo header-box">
+        <p><img src="images/logo.jpeg" alt="" class="logo-image"></p>
+      </div>
+      <div class="name header-box">
+        <h1>THE ULTIMATE FARM.</h1>
+        <p class="mission">Feed the World</p>
+      </div>
+    </header>
 
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <ul>
-              <li>
-                <a href="index.html" tabindex="0">Home</a>
-              </li>
-              <li>
-                <a href="about.html">About</a>
-              </li>
-              <li>
-                <a href="gallery.html">Gallery</a>
-              </li>
-              <li>
-                <a href="#team">Team</a>
-              </li>
-              <li>
-                <a href="contact.html">Contact</a>
-              </li>
-              <li>
-                <a href="#contact"  style="float: right">Login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="index.html" tabindex="0">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="#contact"  style="float: right">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <main>
-          <div>
-            <h2>THE GALLERY</h2>
-          </div>
+    <main>
+      <div>
+        <h2>THE GALLERY</h2>
+      </div>
 
-          <div id="choose">
-            <p>Click the category you want to see</p>
-            <input type="button" value="Clarias" class="button">
-            <input type="button" value="Hybrid" class="button">
-            <input type="button" value="Heterorobronchus" class="button">
-          </div>
+      <div id="choose">
+        <p>Click the category you want to see</p>
+        <button id="button">Clarias</button>
+        <button id="button">Hybrid</button>
+        <button id="button">Heterobronchus</button>
+      </div>
 
-          <div>
-            <select name="category" id="category">
-              <option value="">Select category</option>
-              <option value="">Carias</option>
-              <option value="">Hybrid</option>
-              <option value="">Heterobronchus</option>
-            </select>
+      <div id="display-div">
 
-            <button id="btn">Load Images</button>
-          </div>
+      </div>
+    </main>
 
-          <div id="display-div">
+    <footer>
+      <div class="container text-center">
+        <p>Designed by <a href="https://www.facebook.com/godstar.gerrald"><span>Godstar</span></a></p>
+      </div>
+    </footer>
 
-          </div>
-        </main>
-</body>
+    <script src="display.js"></script>
+  </body>
 </html>
