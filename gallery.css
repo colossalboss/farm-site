@@ -81,6 +81,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  padding-bottom: 1em;
 }
 
 #display-div div img {
