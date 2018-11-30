@@ -66,6 +66,7 @@ let view = {
       let round = document.createElement('p');
       let image = document.createElement('img');
       image.setAttribute('src', fish);
+      image.setAttribute('alt', octopus.type);
       round.append(image);
       fishDiv.append(round);
 
