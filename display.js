@@ -77,7 +77,11 @@ let view = {
   }
 };
 
-document.getElementById('choose').addEventListener('click', function(e) {
-  let select = e.target.innerHTML.toLowerCase();
-  octopus.init(select);
-})
+let elemArray = document.querySelectorAll('.button');
+
+elemArray.forEach(function(elem) {
+  elem.addEventListener('click', function(e) {
+    let select = e.target.innerHTML.toLowerCase();
+    octopus.init(select);
+  });
+});
