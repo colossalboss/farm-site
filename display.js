@@ -74,7 +74,6 @@ let view = {
     };
     name.innerHTML = octopus.type;
     nameDiv.setAttribute('id', 'name-div');
-
   }
 };
 
