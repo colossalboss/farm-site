@@ -75,9 +75,8 @@ a, a:hover, a:focus, a:active, a.active {
 /* gallery */
 
 main {
-    background-color: #68829E;
     font-family: 'Cinzel', serif;
-    color: white;
+    background-color: #fff;
 }
 
 .more {
@@ -124,6 +123,10 @@ h2 {
 
 /* team */
 
+hr {
+    border-width: 4px;
+}
+
 .team-div {
     display: flex;
     flex-wrap: wrap;
@@ -152,10 +155,8 @@ h2 {
 }
 
 .team-text {
-    /* background-color: #34675C; */
-    /* background-color: #1995ad; */
     border-radius: 20px;
-
+    color: #000;
 }
 
 .staff-image img {
@@ -279,8 +280,7 @@ footer {
 }
 
 .color-overlay {
-    background-color: lightblue;
-    width: 83%;
-    opacity: 0.5;
+    background-color: #fec503;
+    width: 84%;
     margin: auto;
 }
